@@ -1,12 +1,15 @@
-import './css/app.css'
-import IMAGE from './react-icon.png'
-import SVG from './react.svg'
-
-export const App = () => {
-    return <>
-        <h1>React Typescript Webpack Starter Template</h1>
-        <img src={IMAGE} alt="logo" width="300" />
-        <img src={SVG} alt="logo" width="300" />
-
-    </>
+import * as React from 'react';
+import IMAGE from './images/react-icon.png'
+import SVG from './images/react.svg'
+import './css/style.css'
+const App = () => {
+    return (
+        <>
+            <h1>App is running now</h1>
+            <img src={IMAGE} alt="react-logo" width="300px" />
+            <img src={SVG} alt="react-logo" width="300px" />
+        </>
+    );
 }
+
+export default App;
