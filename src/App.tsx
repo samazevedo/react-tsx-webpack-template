@@ -3,8 +3,6 @@ import IMAGE from './images/react-icon.png'
 import SVG from './images/react.svg'
 import './css/style.css'
 
-
-
 const App = () => (
     <div>
         <h1>Hello world</h1>
