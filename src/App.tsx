@@ -4,10 +4,11 @@ import SVG from './images/react.svg'
 import './css/style.css'
 
 const App = () => (
-    <div>
-        <h1>Hello world</h1>
-        <p>Never give up on your dreams!</p>
-    </div>
+    const name = "sam";
+<div>
+    <h1>Hello world</h1>
+    <p>Never give up on your dreams!</p>
+</div>
 )
 
 export default App

@@ -49,6 +49,8 @@
     "eslint-plugin-jsx-a11y": "^6.4.1",
     "eslint-plugin-react": "^7.21.5",
     "html-webpack-plugin": "^5.3.2",
+    "husky": "^7.0.1",
+    "lint-staged": "^11.1.0",
     "mini-css-extract-plugin": "^2.1.0",
     "postcss": "^8.3.5",
     "postcss-loader": "^6.1.1",
@@ -60,5 +62,15 @@
     "webpack": "^5.45.1",
     "webpack-cli": "^4.7.2",
     "webpack-dev-server": "^3.11.2"
+  },
+  "lint-staged": {
+    "src /**/*.{js,jsx,ts,tsx,tsx,json,html,css,scss,md": [
+      "prettier --write"
+    ]
+  },
+  "husky": {
+    "hooks": {
+      "pre-commit": "lint-staged"
+    }
   }
 }
