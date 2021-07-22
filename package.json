@@ -11,7 +11,9 @@
     "watch": "webpack --watch",
     "serve": "webpack serve",
     "lint": "eslint \"src/**/*.{js,jsx, ts,tsx,json}\" --quiet --fix",
-    "format": "prettier --write \"src/**/*.{js,jsx,ts,tsx,json,css,scss,html,md}\""
+    "format": "prettier --write \"src/**/*.{js,jsx,ts,tsx,json,css,scss,html,md}\"",
+    "prepare": "husky install",
+    "postinstall": "husky install"
   },
   "repository": {
     "type": "git",
@@ -62,15 +64,5 @@
     "webpack": "^5.45.1",
     "webpack-cli": "^4.7.2",
     "webpack-dev-server": "^3.11.2"
-  },
-  "lint-staged": {
-    "src /**/*.{js,jsx,ts,tsx,tsx,json,html,css,scss,md": [
-      "prettier --write"
-    ]
-  },
-  "husky": {
-    "hooks": {
-      "pre-commit": "lint-staged"
-    }
   }
 }
